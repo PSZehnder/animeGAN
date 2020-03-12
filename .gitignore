@@ -4,3 +4,4 @@
 *.pth
 *.swp
 data/data_root/**
+*.tgz
