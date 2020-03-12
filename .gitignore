@@ -1,0 +1,6 @@
+*.ndjson
+*.jpg
+*.txt
+*.pth
+*.swp
+data/data_root/**
