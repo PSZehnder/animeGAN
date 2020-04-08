@@ -20,11 +20,17 @@ The sketches come from Google's [QuickDraw! dataset](https://storage.cloud.googl
 
 ![](images/demo_.gif)
 
+# What's in this repo?
++ `cyclegan` includes all the code needed for inference but not training (does not include a discriminator)
++ `data` contains all the scripts you need to get and convert the data from `.ndjson` (n-dimensional json. Basically a list of `.json` objects) to images you can train on
++ `drawmywaifu.py` will open the above interface
+
+## Requirements
+Pytorch == 0.4 (I think more recent versions will work too, but I used 0.4) 
+
 ## Notes/further improvement
 CycleGAN's improvement over previous GANs was that it trains two style transfer networks for translation from either style domain
-to the other. It then optimizes towards "cycle consistency". That is, if we have networks $F: A \to B$ and $G: B \to A$, we want
-it to be the case that for any image $X$
-\[X=G(F(X))\]
+to the other. It then optimizes towards "cycle consistency". That is, if we have networks F: A -> B and G: B -> A, we want it to be the case that for any image X, X=G(F(X))
 
 The problem in this project was that the second network often deteriorates to predicting blank sketches from anime images. This
 makes sense: given that the images are mostly whitespace predicting all whitespace is never a bad guess under most metrics.
