@@ -18,7 +18,7 @@ The sketches come from Google's [QuickDraw! dataset](https://storage.cloud.googl
 
 ## animeGAN in action
 
-![](images/demo.gif)
+![](images/demo_.gif)
 
 ## Notes/further improvement
 CycleGAN's improvement over previous GANs was that it trains two style transfer networks for translation from either style domain
