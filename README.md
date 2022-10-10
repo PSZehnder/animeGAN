@@ -1,5 +1,5 @@
 # animeGAN
-a silly project to draw some waifus with deep learning
+a silly project to draw some anime faces with deep learning
 
 ![](images/example.png)
 
